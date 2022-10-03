@@ -1,16 +1,76 @@
-html{
+* {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: sans-serif;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
-.banner{
-    display:flex;
-    top:0;
-    position:sticky;
-    flex-flow:row nowrap;
-    justify-content: space-around;
+.banner {
+    top: 0;
+    position: sticky;
+    
 }
 
-#About{
+.banner_item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: stretch;
+}
+.banner_item, .banner_title, .banner_item_link{
+    background-color: #495057;
+    color: #dee2e6;
+}
+.banner_title {
+    font-size: xx-large;
+
+}
+.banner_item_link {
+    font-size: x-large;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.banner_item_link:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+button{
+    transition-duration: 0.25s;
+}
+button:hover{
+    transform: scale(1.2);
+}
+.frontpage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .frontpage_paragraph { grid-area: 1 / 1 / 6 / 4; background-color:#6c757d ;}
+    .frontpage_blank { grid-area: 1 / 4 / 6 / 6; background-color: #212529;}
+    .frontpage_pic { grid-area: 2 / 3 / 5 / 5; }
+
+#About {
     width: 100vw;
     height: 100hw;
+    font-size: x-large;
+}
+
+#Work {
+    width: 100vw;
+    height: 100hw;
+    font-size: x-large;
+}
+#Contact {
+    width: 100vw;
+    height: 100hw;
+    font-size: x-large;
 }
