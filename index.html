@@ -26,6 +26,7 @@
             <a href="#Contact" class="banner_item_link">
                 Contact
             </a>
+            <button id="alert">alert</button>
         </div>
 
     </div>
@@ -62,7 +63,20 @@
                 <p>Go to My Github!</p>
             </button>
         </a>
+        <br>
+        <br>
+        <form name="contact_form" onsubmit="checkInput()">
+            <label>Name:</label>
+            <input placeholder= "Please type in your name" type="text" class="input" id="name">
+            <br>
+            <label>Email:</label>
+            <input placeholder= "Please type in your email address" type="text" class="input" id="email">
+            <br>
+            <input type="submit">
+        </form>
+
     </div>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
